@@ -22,7 +22,7 @@ root.render(
         ::after {
           margin: 0;
           box-sizing: border-box;
-          font-family: 'Nunito Sans', sans-serif;
+          font-family: sans-serif;
         }
       `}
     />
