@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import Footer from './Footer.js';
 import Header from './Header.js';
 import Main from './Main.js';
 
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <Main />
-      <footer>Footer Section</footer>
+      <Footer />
     </div>
   );
 }
