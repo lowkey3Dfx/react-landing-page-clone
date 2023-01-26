@@ -2,33 +2,6 @@
 import { css } from '@emotion/react';
 import Logo from './Screenshot 2023-01-24 at 16.33.28 (2).png';
 
-const sectionHeaderStyled = css`
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #f3f4f6;
-  height: 32px;
-  padding: 8px 0;
-  font-size: 0.75rem;
-
-  svg {
-    width: 12px;
-    height: 12px;
-    background-color: green;
-  }
-
-  div {
-    display: flex;
-    gap: 1px;
-    align-items: center;
-    height: 16px;
-    color: #9ca3af;
-  }
-`;
-
-const sectionHeaderStyledDiv = css`
-  padding-right: 24px;
-`;
-
 const headerStyled = css`
   margin-bottom: 32px;
   padding-top: 0.5rem;
@@ -137,56 +110,29 @@ const dropdownMenuStyled = css`
 
 export default function Header() {
   return (
-    <>
-      {/* Grey Bar on top */}
-      <section css={sectionHeaderStyled}>
-        <div>
-          <div css={sectionHeaderStyledDiv}>
-            <svg></svg>
-            <span>Founded in 🇳🇱 Holland. We respect your privacy.</span>
-          </div>
-          <div css={sectionHeaderStyledDiv}>
+    <header css={headerStyled}>
+      <div css={navbarStyled}>
+        <div css={navbarItemsStyled}>
+          <div css={navbarItemsLogoStyled}>
             <div>
-              <div>
-                <svg></svg>
-                <svg></svg>
-                <svg></svg>
-                <svg></svg>
-                <svg></svg>
-              </div>
-              <p>Used by 5,603 happy customers</p>
+              <a>ProfilePicture.AI</a>
+              {/* insert future logo here */}
+              {/* <svg src={Logo}></svg> */}
             </div>
           </div>
-          <div css={sectionHeaderStyledDiv}>
-            <svg></svg>
-            <span>806,832+ profile pictures already created</span>
+          <div css={navbarTopRightStyled}>
+            <a css={loginLinkStyled}>Login</a>
+            <a css={createPFPStyled}>Create your PFP</a>
           </div>
-        </div>
-      </section>
-      {/* Beginning of Header Section */}
-      <header css={headerStyled}>
-        <div css={navbarStyled}>
-          <div css={navbarItemsStyled}>
-            <div css={navbarItemsLogoStyled}>
-              <div>
-                <a>ProfilePicture.AI</a>
-                {/* insert future logo here */}
-                {/* <svg src={Logo}></svg> */}
-              </div>
-            </div>
-            <div css={navbarTopRightStyled}>
-              <a css={loginLinkStyled}>Login</a>
-              <a css={createPFPStyled}>Create your PFP</a>
-            </div>
-            {/* Top right header dropdown menu */}
-            <div css={dropdownMenuStyled}>
-              <button>
-                <span>
-                  <svg src="/#"></svg>
-                </span>
-              </button>
-            </div>
-            {/* <nav css={navStyled}>
+          {/* Top right header dropdown menu */}
+          <div css={dropdownMenuStyled}>
+            <button>
+              <span>
+                <svg src="/#"></svg>
+              </span>
+            </button>
+          </div>
+          {/* <nav css={navStyled}>
               <ul>
                 <li>
                   <a>For who</a>
@@ -203,9 +149,8 @@ export default function Header() {
               </ul>
 
             </nav> */}
-          </div>
         </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 }

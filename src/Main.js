@@ -88,6 +88,10 @@ const gradientStyle = css`
   background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
 `;
 const rightDivStyled = css`
   width: 40%;
