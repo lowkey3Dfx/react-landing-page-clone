@@ -56,6 +56,7 @@ const leftDivStyled = css`
     height: 12px;
     width: 12px;
     background: black;
+
     margin-right: 8px;
   }
 
