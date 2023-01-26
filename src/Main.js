@@ -55,7 +55,7 @@ const leftDivStyled = css`
   svg {
     height: 12px;
     width: 12px;
-    background: green;
+    background: black;
     margin-right: 8px;
   }
 
@@ -136,6 +136,10 @@ const gradientButtonStyled = css`
   :hover {
     cursor: pointer;
     border: solid 1px black;
+  }
+
+  svg {
+    margin-left: 8px;
   }
 `;
 
