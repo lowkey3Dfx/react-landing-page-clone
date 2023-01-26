@@ -3,8 +3,7 @@ import { css } from '@emotion/react';
 
 const sectionStyled = css`
   display: block;
-  margin-top: 64px;
-  padding-bottom: 40px;
+  padding: 64px 0 40px;
   background-color: black;
 `;
 const divOneStyled = css`
@@ -29,13 +28,12 @@ const divThreeStyled = css`
     color: white;
     width: 150px;
     display: block;
-    vertical-align: middle;
   }
 
   p {
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.625;
-    font-size: 1rem;
+    font-size: 0.96rem;
     margin-top: 1.75rem;
   }
   /* Remove this when you found the logo svg */
@@ -56,7 +54,7 @@ const divThreeStyled = css`
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+    background-color: rgba(0, 0, 0);
     border-color: rgba(255, 255, 255, 0.2);
     border-radius: 0.375rem;
     display: flex;
@@ -94,7 +92,7 @@ const divFiveStyled = css`
   p {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.92rem;
     line-height: 1.5rem;
     margin: 0;
   }
@@ -113,10 +111,30 @@ const divFiveStyled = css`
 
     a {
       color: rgba(255, 255, 255, 0.7);
-      font-size: 0.875rem;
+      font-size: 0.82rem;
       line-height: 1.25rem;
       display: flex;
     }
+  }
+`;
+
+const lineBreakStyled = css`
+  border-color: #1f2937;
+  margin-bottom: 2.5rem;
+  margin-top: 4rem;
+  border-top-width: 1px;
+`;
+
+const divSixStyled = css`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.82rem;
+    line-height: 1.25rem;
+    margin: 0;
   }
 `;
 
@@ -251,6 +269,10 @@ export default function Footer() {
               </ul>
             </div>
           </div>
+        </div>
+        <hr css={lineBreakStyled} />
+        <div css={divSixStyled}>
+          <p>© Copyright 2023, All Rights Reserved by Postcraft PTE LTD </p>
         </div>
       </div>
     </section>
